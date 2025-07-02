@@ -81,7 +81,7 @@ const agregarVecino = () => {
 
 // Borrar vecino
 const borrarVecino = () => {
-  const valorNombre = $nombre.value.trim();
+  const valorNombre = $nombre.value.trim().toUpperCase();
 
   if (!valorNombre) {
     mostrarTexto("error", "success", "Debes ingresar el nombre a borrar.");
